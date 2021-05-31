@@ -1,9 +1,7 @@
 <?php
 
 $var = $_SESSION['varname'];
-
-
-require 'views/header.php';
+require 'public/views/header.php';
 
 ?>
 
@@ -32,6 +30,6 @@ require 'views/header.php';
   </body>
   <?php
 
-  require 'views/footer.php';
+  require 'public/views/footer.php';
 
   ?>

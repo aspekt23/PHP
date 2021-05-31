@@ -1,6 +1,7 @@
 <?php
-// Create Router instance
 use Bramus\Router\Router;
+require $_SERVER['DOCUMENT_ROOT'] . "/config/database.php";
+
 
 $router = new Router();
 session_start();
@@ -8,12 +9,15 @@ session_start();
 // Define routes
 $router->get('/', function() {
     $_SESSION['varname'] = 'toto je skrytapremenna';
-    require 'views/mainpage.php';
+    require 'public/views/mainpage.php';
 });
 
 $router->get('/db', function() {
+    $db = new Database();
+    if($db->connect())
+        echo 'yes MF';
+    else echo 'oh no';
 
-    require 'db.php';
 });
 
 
