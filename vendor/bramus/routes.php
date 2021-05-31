@@ -11,6 +11,11 @@ $router->get('/', function() {
     require 'views/mainpage.php';
 });
 
+$router->get('/db', function() {
+
+    require 'db.php';
+});
+
 
 
 $router->set404(function() {

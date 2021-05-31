@@ -1,6 +1,7 @@
 {
     "require": {
         "pecee/simple-router": "^4.3",
-        "bramus/router": "~1.5"
+        "bramus/router": "~1.5",
+      "ext-pdo": "*"
     }
 }
