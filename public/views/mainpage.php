@@ -5,11 +5,14 @@ require 'public/views/header.php';
 
 ?>
 
-  <body>
+
 
   <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-10" style="margin-top: 35px;">
+      <div class="row justify-content-center" style="margin-top: 10px">
+
+              <?php require 'public/views/nav.php'; ?>
+
+          <div class="col-10">
               <div class="card">
                   <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -27,7 +30,7 @@ require 'public/views/header.php';
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-  </body>
+
   <?php
 
   require 'public/views/footer.php';

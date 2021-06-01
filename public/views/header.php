@@ -6,8 +6,6 @@
 
 
 
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,8 +15,14 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+    <link href="/public/views/main.css" rel="stylesheet" type="text/css"/>
     <title>Hello, world!</title>
 
 
 </head>
+
+<body>
+
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Fixed top</a>
+</nav>
